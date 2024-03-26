@@ -44,7 +44,7 @@ def createTest(root, layout):
     phraseLabel.pack()
 
     # Text Entry Box
-    inputtxt = Text(newWindow, height=1, width=60 ,font=("Cambria"))
+    inputtxt = Text(newWindow, height=1, width=40 ,font=("Cambria"))
     inputtxt.pack()
 
     # entry = StringVar(newWindow)
