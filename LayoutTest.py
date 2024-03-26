@@ -2,6 +2,7 @@ from tkinter import *
 from PIL import Image, ImageTk
 import random
 
+
 def errorTracker():
     return
 
@@ -36,13 +37,10 @@ def createTest(root, layout):
     entryLabel = Label(newWindow, text="Enter the phrase below:", font=("Cambria", 15, "bold"))
     entryLabel.pack()
 
+    #Random Phrase Generator
     phrases = {1: "The five boxing wizards jump quickly", 2: "Pack my box with five dozen liquor jugs",
                3: "The quick brown fox jumps"}
-
-    #rand = random.SystemRandom()
-    #startPhrase = rand.choice(phrases.keys())
-
-    phraseLabel = Label(newWindow, text=phrases.get(1), font=("Cambria", 25, "bold"))
+    phraseLabel = Label(newWindow, text=phrases.get(random.randint(1, 3)), font=("Cambria", 25, "bold"))
     phraseLabel.pack()
 
     # Text Entry Box
