@@ -33,7 +33,7 @@ def createTest(root, layout):
     newWindow.resizable(width=False, height=False)
 
     # Enter the Phrase
-    entryLabel = Label(newWindow, text="Enter the phrase", font=("Cambria", 10, "bold"))
+    entryLabel = Label(newWindow, text="Enter the phrase below:", font=("Cambria", 15, "bold"))
     entryLabel.pack()
 
     phrases = {1: "The five boxing wizards jump quickly", 2: "Pack my box with five dozen liquor jugs",
@@ -42,7 +42,7 @@ def createTest(root, layout):
     #rand = random.SystemRandom()
     #startPhrase = rand.choice(phrases.keys())
 
-    phraseLabel = Label(newWindow, text=phrases.get(1), font=("Cambria", 10, "bold"))
+    phraseLabel = Label(newWindow, text=phrases.get(1), font=("Cambria", 25, "bold"))
     phraseLabel.pack()
 
     # Text Entry Box
