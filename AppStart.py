@@ -1,7 +1,6 @@
 from tkinter import *
 import InputError as e
 import LayoutTest as LT
-import tkinter.font as tkFont
 
 
 def startApp(root):
