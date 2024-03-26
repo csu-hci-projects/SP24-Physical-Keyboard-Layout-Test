@@ -1,8 +1,6 @@
 from tkinter import *
-
 import InputError as e
 import LayoutTest as LT
-from PIL import Image, ImageTk
 
 
 def startApp(root):
@@ -15,7 +13,7 @@ def startApp(root):
     label.pack(padx=(0, 50), pady=(50, 0))
 
     # Welcome Label
-    header = Label(root, text="Welcome to our keyboard layout test", font=("Cambria", 20, "bold"))
+    header = Label(root, text="Welcome to our keyboard layout test!", font=("Cambria", 25, "bold"))
     header.place(y=10)
     header.pack()
 
@@ -24,7 +22,7 @@ def startApp(root):
     label.pack(padx=(0, 10), pady=(10, 0))
 
     # Please Select label
-    selection = Label(root, text="Please select a keyboard layout to get started", font=("Cambria", 20, "bold"))
+    selection = Label(root, text="Please select a keyboard layout to get started:", font=("Cambria", 15, "bold"))
     selection.place(y=30)
     selection.pack()
 
@@ -32,7 +30,7 @@ def startApp(root):
     label = Label(root, text="")
     label.pack(padx=(0, 10), pady=(10, 0))
 
-    #Select Button
+    # Select Button
     selectedLayout = StringVar(root)
     selectedLayout.set("--Select a layout--")
     layoutMenu = OptionMenu(root, selectedLayout, "--Select a layout--", "QWERTY", "Dvorak", "Colemak", "Workman")
@@ -42,7 +40,7 @@ def startApp(root):
     label = Label(root, text="")
     label.pack(padx=(0, 5), pady=(5, 0))
 
-    #Start Button
+    # Start Button
     def startApp():
         layout = selectedLayout.get()
         if layout == "--Select a layout--":
@@ -50,7 +48,7 @@ def startApp(root):
         else:
             LT.createTest(root, layout)
 
-    button = Button(root, text="Start test", command=startApp)
+    button = Button(root, text="Start Test", command=startApp, height=2, width=10, font=("Cambria", 15, ""))
     button.pack()
 
     root.mainloop()
