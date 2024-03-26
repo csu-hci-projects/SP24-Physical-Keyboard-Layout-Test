@@ -43,14 +43,15 @@ def createTest(root, layout):
     phraseLabel = Label(newWindow, text=phrases.get(random.randint(1, 3)), font=("Cambria", 25, "bold"))
     phraseLabel.pack()
 
+    # Padding
     label = Label(newWindow, text="")
-
     label.pack(padx=(0, 25), pady=(25, 0))
 
     # Text Entry Box
     inputtxt = Text(newWindow, height=1, width=40, font="Cambria")
     inputtxt.pack()
 
+    # Padding
     label = Label(newWindow, text="")
     label.pack(padx=(0, 50), pady=(50, 0))
 

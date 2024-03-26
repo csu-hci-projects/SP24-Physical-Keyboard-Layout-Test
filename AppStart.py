@@ -35,6 +35,7 @@ def startApp(root):
     selectedLayout.set("--Select a layout--")
     layoutMenu = OptionMenu(root, selectedLayout, "--Select a layout--", "QWERTY", "Dvorak", "Colemak", "Workman")
     layoutMenu.pack()
+    layoutMenu.config(font=("Cambria", 15, "bold"))
 
     # Padding
     label = Label(root, text="")
@@ -48,7 +49,7 @@ def startApp(root):
         else:
             LT.createTest(root, layout)
 
-    button = Button(root, text="Start Test", command=startApp, height=2, width=10, font=("Cambria", 15, ""))
+    button = Button(root, text="Start Test", command=startApp, height=2, width=16, font=("Cambria", 15, "bold"))
     button.pack()
 
     root.mainloop()
