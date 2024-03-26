@@ -38,8 +38,8 @@ def createTest(root, layout):
     entryLabel.pack()
 
     #Random Phrase Generator
-    phrases = {1: "The five boxing wizards jump quickly", 2: "Pack my box with five dozen liquor jugs",
-               3: "The quick brown fox jumps"}
+    phrases = {1: "the five boxing wizards jump quickly", 2: "pack my box with five dozen liquor jugs",
+               3: "the quick brown fox jumps"}
     phraseLabel = Label(newWindow, text=phrases.get(random.randint(1, 3)), font=("Cambria", 25, "bold"))
     phraseLabel.pack()
 
@@ -47,9 +47,6 @@ def createTest(root, layout):
     inputtxt = Text(newWindow, height=1, width=40 ,font=("Cambria"))
     inputtxt.pack()
 
-    # entry = StringVar(newWindow)
-    # textbox = ttk.Entry(newWindow, state='readonly', textvariable=entry)
-    # textbox.grid(rowspan=1, columnspan=100, ipadx=999, ipady=20)
 
     # Image of Layout
     image = layoutImage(layout)
