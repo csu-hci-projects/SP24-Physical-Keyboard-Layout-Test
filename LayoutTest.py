@@ -54,7 +54,6 @@ def createTest(root, layout):
     label = Label(newWindow, text="")
     label.pack(padx=(0, 50), pady=(50, 0))
 
-
     # Image of Layout
     image = layoutImage(layout)
     label = Label(newWindow, image=image)
