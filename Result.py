@@ -6,4 +6,4 @@ def resultWindow(root):
     resultWindow.geometry("1000x500")
     resultWindow.resizable(width=False, height=False)
 
-
+    root.withdraw()
