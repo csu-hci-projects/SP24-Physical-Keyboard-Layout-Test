@@ -79,10 +79,9 @@ def createTest(root, layout):
         if not phraseLabel.cget('text').startswith(inputtxt.get()):
             inputtxt.config(fg="red")
         else:
-            inputtxt.config(fg="white")
+            inputtxt.config(fg="green")
             newWindow.errorCounted = False
         if inputtxt.get() == phraseLabel.cget('text'):
-            inputtxt.config(fg="green")
             newWindow.after(1000, toResult(newWindow, newWindow.cps, newWindow.cpm, newWindow.wps, newWindow.wpm, newWindow.errorRate))
             newWindow.running = False
     
